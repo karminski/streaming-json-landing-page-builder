@@ -16,6 +16,7 @@ import Topic from "./Topic.astro";
     >
         <div class="w-full text-lg font-normal">Input JSON fragment here:</div>
         <textarea
+            id="jsonfragment"
             class="justify-items-center bg-zinc-900 relative w-full border border-lime p-4 rounded-2xl"
             rows="10"
             autofocus>&lbrace;&quot;field</textarea
@@ -24,8 +25,10 @@ import Topic from "./Topic.astro";
             And streaming-json will complete it to:
         </div>
         <textarea
-            class="justify-items-center bg-zinc-900 relative w-full border border-lime p-4 rounded-2xl"
+            id="compltedjson"
+            class="justify-items-center bg-zinc-900 text-lime relative w-full border border-lime p-4 rounded-2xl"
             rows="10"
+            readonly
             autofocus>&lbrace;&quot;field</textarea
         >
     </div>
