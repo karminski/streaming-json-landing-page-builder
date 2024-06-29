@@ -12,28 +12,21 @@ import Topic from "./Topic.astro";
     </div>
 
     <div
-        class="flex-row items-center my-10 p-14 bg-zinc-900 text-white rounded-[45px]"
+        class="flex-row items-center my-10 p-14 bg-zinc-900 text-white rounded-[45px] grid grid-cols-1 gap-6"
     >
-        <div
-            class="justify-items-center relative w-full border border-lime rounded-2xl"
+        <div class="w-full text-lg font-normal">Input JSON fragment here:</div>
+        <textarea
+            class="justify-items-center bg-zinc-900 relative w-full border border-lime p-4 rounded-2xl"
+            rows="10"
+            autofocus>&lbrace;&quot;field</textarea
         >
-            <div class="p-4 md:p-10 my-10">
-                <p
-                    class="items-center justify-center text-white text-sm md:text-lg font-normal mb-4"
-                >
-                    "We have been working with Positivus for the past year and
-                    have seen a significant increase in website traffic and
-                    leads as a result of their efforts. The team is
-                    professional, responsive, and truly cares about the success
-                    of our business. We highly recommend Positivus to any
-                    company looking to grow their online presence."
-                </p>
-                <span class="text-lime text-base md:text-xl font-medium"
-                    >John Smith<br /></span
-                ><span class="text-white text-lg font-normal"
-                    >Marketing Director at XYZ Corp</span
-                >
-            </div>
+        <div class="w-full text-lg font-normal">
+            And streaming-json will complete it to:
         </div>
+        <textarea
+            class="justify-items-center bg-zinc-900 relative w-full border border-lime p-4 rounded-2xl"
+            rows="10"
+            autofocus>&lbrace;&quot;field</textarea
+        >
     </div>
 </Container>
